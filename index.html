@@ -54,7 +54,17 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `Government officials were warned repeatedly about making misleading claims about job figures before the official statistics watchdog reprimanded Boris Johnson over the matter. Ed Humpherson, the director general of the UK Statistics Authority (UKSA), said there had been “a series of informal discussions” before the regulator took the “unusual” step of issuing public rebukes to No 10 over the same issue twice last month. During more than half a dozen editions of prime minister’s questions since November, Johnson has made the misleading claim that more people are in employment in the UK than before the pandemic began. Yet, although the numbers of workers on payrolls has risen, the number of self-employed people has dropped significantly so that the total number of people in work is down by 600,000. The chair of the UKSA, Sir David Norgrove, wrote to Johnson saying he was making “a selective use of data” and added that “public trust requires a complete statement”.`;
+      const article = `Within hours, several respected global picture agencies had withdrawn the photo from its books, citing concerns over inauthenticity. The following day saw Kate make an unprecedented apology, explaining that “like many amateur photographers” she had “experimented with editing.” However, with royal staff refusing to release the original photo – reported to have been taken just two days before it was published – speculation over what exactly went on has not gone away.
+
+This weekend, The Times of London has pushed the story along, signalling that royal insiders have sought to seize control of the narrative and bring the media back on side.
+
+The paper, citing “close friends,” reports that the couple are “shaken and devastated” by the questions raised over the state of their marriage – following the lack of wedding ring on Kate’s finger in the photo – and furthermore, that Kate could speak out about her health at public engagements next month.
+
+A royal source told the paper: “They are at their most open when out interacting with members of the public and I can see a world in which the princess might discuss her recovery out on engagements. If she was going to do it, that’s how she would do it.” A friend says: “They will want to be clear and more open, but they’ll do it when they feel ready. I would expect that to be her instinct and it will be her call. They’re not going to be rushed.”
+
+It adds that the couple are expected to stick to their custom of releasing a new picture to celebrate their son Louis’s sixth birthday on April 23. While Kate has often picked up the camera herself to take photos of her children, she may opt this time for the services of a professional.
+
+Meanwhile, over in Montecito, Meghan Markle – whether coincidentally or not, we will surely not know – launched a publicity blitz for her new lifestyle and wellness brand, American Riviera Orchard, and returned to social media for the first time since her marriage to Prince Harry back in 2018. Media scrutiny on both sides of the Atlantic looks set to continue undimmed.`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +86,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 5 == 0) {
+          if ((counter + 1) % 4 == 0) {
             addLine(lineText);
             lineText = "";
           } else {
